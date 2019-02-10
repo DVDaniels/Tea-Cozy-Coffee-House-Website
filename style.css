@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+/*Unversal Styles*/
+body, mission_text {
+  font-family: helvetica;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 98%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 22px;
+  color: seashell;
+  right: 10px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img{
+  margin-left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  margin: auto;
+}
+
+a {
+  color: seashell;
+}
+
+body {
+
+}
+
+/*Mission*/
+#mission {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 700px;
+  justify-content: center;
+  top: 71px;
+  background-image: url(Resources/mission-background.jpg);
+  align-items: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mission_text {
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  color: seashell;
+  width: 100%;
+}
+
+/*Tea of the Month*/
+#Featured {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+#tea_box {
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  max-height: 500px;
+  max-width: 1000px;
+}
+
+#month {
+  margin-top: 350px;
+}
+
+.text {
+  padding: 10px 0;
+}
+
+/* Locations */
+#locations {
+  background-image: url("Resources/locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+}
+
+#location_title {
+  padding-top: 75px;
+  padding-bottom: 15px;
+}
+
+#location_box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.city {
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  opacity: 1;
+  margin: 0 20px;
+  width: 300px;
+  background-color: black;
+}
+
+/* Footer */
+footer {
+  max-height: 200px;
+}
+
+#copy {
+  text-align: left;
+  padding-left: 20px;
+}
