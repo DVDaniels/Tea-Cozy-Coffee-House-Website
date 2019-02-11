@@ -11,6 +11,9 @@ body, mission_text {
   opacity: 0.9;
 }
 
+header, .mission_text, .locations {
+  background-color: black;
+}
 
 /*Header*/
 
@@ -23,12 +26,11 @@ header {
   width: 98%;
   height: 69px;
   border-bottom: 1px solid seashell;
-  background-color: black;
-  font-family: helvetica;
   font-weight: bold;
   font-size: 22px;
   color: seashell;
   right: 10px;
+  z-index: 10;
 }
 
 .logo {
@@ -45,8 +47,7 @@ header {
 
 nav span {
   display: inline-block;
-  padding: 20px 10px;
-  margin: auto;
+  padding: 0px 10px;
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 #mission {
 display: flex;
   background-image: url(Resources/mission-background.jpg);
-  position: relative;
+  position: static;
   max-width: 1200px;
   height: 700px;
   top: 70px;
@@ -78,17 +79,20 @@ display: flex;
 /*Tea of the Month*/
 #Featured {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 10 auto;
+  position: absolute;
 }
 
 
 #tea_box {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1000px;
   max-height: 500px;
   align-content: center;
+  margin-bottom: 50px;
+  padding: 10px 10px;
 }
 
 #month {
