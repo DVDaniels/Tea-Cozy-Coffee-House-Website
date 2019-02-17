@@ -19,18 +19,13 @@ header, .mission_text, .locations {
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 98%;
+  top: 0px;
+  width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
-  font-weight: bold;
-  font-size: 22px;
   color: seashell;
-  right: 10px;
-  z-index: 10;
 }
 
 .logo {
@@ -57,15 +52,15 @@ a {
 
 /*Mission*/
 #mission {
-display: flex;
+  display: flex;
+  flex: auto;
   background-image: url(Resources/mission-background.jpg);
   position: static;
   max-width: 1200px;
   height: 700px;
-  top: 70px;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
+  margin: auto;
 }
 
 .mission_text {
@@ -78,9 +73,11 @@ display: flex;
 
 /*Tea of the Month*/
 #Featured {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1000px;
-  margin: 10 auto;
-  position: absolute;
+  margin: auto;
+  padding-top: 100px;
 }
 
 
@@ -95,7 +92,17 @@ display: flex;
   padding: 10px 10px;
 }
 
+.tea_image img {
+  display: flex;
+  flex: auto;
+  max-height: 200px;
+  max-width: 300px;
+  padding: 10px;
+}
+
 #month {
+  display: flex;
+  flex: auto;
   margin-top: 350px;
 }
 
@@ -106,7 +113,9 @@ display: flex;
 /* Locations */
 #locations {
   background-image: url("Resources/locations-background.jpg");
-  flex: auto;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
   height: 500px;
   width: 1200px;
 }
@@ -125,7 +134,7 @@ display: flex;
 .city {
   display: inline-flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column;
   opacity: 1;
   margin: 0 20px;
   width: 300px;
