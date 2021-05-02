@@ -15,6 +15,10 @@ header, .mission_text, .locations {
   background-color: black;
 }
 
+h1, h3, h4 {
+  font-family: cursive;
+}
+
 a {
   text-decoration: none;
   color: #929292;
@@ -92,6 +96,7 @@ nav span {
   width: 100%;
   margin: 25px;
   border-radius: 3px;
+  opacity: .89;
 }
 
 /*Tea of the Month*/
@@ -155,7 +160,7 @@ nav span {
 }
 
 .city {
-  opacity: 1;
+  opacity: .85;
   margin: 20px;
   width: 300px;
   background-color: black;
@@ -165,9 +170,9 @@ nav span {
 /* Footer */
 footer {
   max-height: 200px;
+  line-height: .01;
 }
 
 #copy {
   text-align: center;
-  padding-left: 20px;
 }
