@@ -15,16 +15,37 @@ header, .mission_text, .locations {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+  color: #929292;
+  font-size: .75em;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #009192;
+}
+
+h4 {
+  color: #929292;
+}
+
+p {
+  color: #929292;
+}
+
 /*Header*/
 
 header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 69px;
-  border-bottom: 1px solid seashell;
+  height: auto;
+  border-bottom: 2px solid #009192;
   color: seashell;
 }
 
@@ -32,6 +53,7 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  padding: 10px 0px;
 }
 
 .logo img{
@@ -41,12 +63,11 @@ header {
 }
 
 nav span {
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-a {
-  color: seashell;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
 }
 
 
@@ -54,9 +75,9 @@ a {
 #mission {
   display: flex;
   flex: auto;
-  background-image: url(Resources/mission-background.jpg);
-  position: static;
-  max-width: 1200px;
+  background: url(Resources/mission-background.jpg) repeat-y 30%;
+  background-size: cover;
+  width: auto;
   height: 700px;
   justify-content: center;
   align-items: center;
@@ -69,12 +90,12 @@ a {
   background-color: black;
   color: seashell;
   width: 100%;
+  margin: 25px;
+  border-radius: 3px;
 }
 
 /*Tea of the Month*/
 #Featured {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 1000px;
   margin: auto;
   padding-top: 100px;
@@ -86,7 +107,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1000px;
-  max-height: 500px;
+  max-height: auto;
   align-content: center;
   margin-bottom: 50px;
   padding: 10px 10px;
@@ -97,8 +118,10 @@ a {
   flex: auto;
   max-height: 200px;
   max-width: 300px;
-  padding: 10px;
+  border-radius: 4px;
+  padding: 0px 10px;
 }
+
 
 #month {
   display: flex;
@@ -112,12 +135,18 @@ a {
 
 /* Locations */
 #locations {
-  background-image: url("Resources/locations-background.jpg");
+  background: url("Resources/locations-background.jpg") repeat-y 70%;
+  background-size: cover;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.location-cards {
   display: flex;
-  flex-flow: column;
-  margin: auto;
-  height: 500px;
-  width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 #location_title {
@@ -125,20 +154,12 @@ a {
   padding-bottom: 15px;
 }
 
-#location_box {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
 .city {
-  display: inline-flex;
-  justify-content: center;
-  flex-flow: column;
   opacity: 1;
-  margin: 0 20px;
+  margin: 20px;
   width: 300px;
   background-color: black;
+  border-radius: 4px;
 }
 
 /* Footer */
@@ -147,6 +168,6 @@ footer {
 }
 
 #copy {
-  text-align: left;
+  text-align: center;
   padding-left: 20px;
 }
